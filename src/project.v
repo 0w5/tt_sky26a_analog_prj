@@ -5,7 +5,7 @@
 
 `default_nettype none
 
-module tt_um_0w5_analog (
+module tt_um_shimomi_analog (
     input  wire       VGND,
     input  wire       VDPWR,    // 1.8v power supply
     input  wire       VAPWR,    // 3.3v power supply
