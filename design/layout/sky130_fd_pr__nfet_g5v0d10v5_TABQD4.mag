@@ -1,0 +1,136 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1777885012
+<< pwell >>
+rect -357 -1258 357 1258
+<< mvnmos >>
+rect -129 -1000 -29 1000
+rect 29 -1000 129 1000
+<< mvndiff >>
+rect -187 988 -129 1000
+rect -187 -988 -175 988
+rect -141 -988 -129 988
+rect -187 -1000 -129 -988
+rect -29 988 29 1000
+rect -29 -988 -17 988
+rect 17 -988 29 988
+rect -29 -1000 29 -988
+rect 129 988 187 1000
+rect 129 -988 141 988
+rect 175 -988 187 988
+rect 129 -1000 187 -988
+<< mvndiffc >>
+rect -175 -988 -141 988
+rect -17 -988 17 988
+rect 141 -988 175 988
+<< mvpsubdiff >>
+rect -321 1210 321 1222
+rect -321 1176 -213 1210
+rect 213 1176 321 1210
+rect -321 1164 321 1176
+rect -321 1114 -263 1164
+rect -321 -1114 -309 1114
+rect -275 -1114 -263 1114
+rect 263 1114 321 1164
+rect -321 -1164 -263 -1114
+rect 263 -1114 275 1114
+rect 309 -1114 321 1114
+rect 263 -1164 321 -1114
+rect -321 -1176 321 -1164
+rect -321 -1210 -213 -1176
+rect 213 -1210 321 -1176
+rect -321 -1222 321 -1210
+<< mvpsubdiffcont >>
+rect -213 1176 213 1210
+rect -309 -1114 -275 1114
+rect 275 -1114 309 1114
+rect -213 -1210 213 -1176
+<< poly >>
+rect -129 1072 -29 1088
+rect -129 1038 -113 1072
+rect -45 1038 -29 1072
+rect -129 1000 -29 1038
+rect 29 1072 129 1088
+rect 29 1038 45 1072
+rect 113 1038 129 1072
+rect 29 1000 129 1038
+rect -129 -1038 -29 -1000
+rect -129 -1072 -113 -1038
+rect -45 -1072 -29 -1038
+rect -129 -1088 -29 -1072
+rect 29 -1038 129 -1000
+rect 29 -1072 45 -1038
+rect 113 -1072 129 -1038
+rect 29 -1088 129 -1072
+<< polycont >>
+rect -113 1038 -45 1072
+rect 45 1038 113 1072
+rect -113 -1072 -45 -1038
+rect 45 -1072 113 -1038
+<< locali >>
+rect -309 1176 -213 1210
+rect 213 1176 309 1210
+rect -309 1114 -275 1176
+rect 275 1114 309 1176
+rect -129 1038 -113 1072
+rect -45 1038 -29 1072
+rect 29 1038 45 1072
+rect 113 1038 129 1072
+rect -175 988 -141 1004
+rect -175 -1004 -141 -988
+rect -17 988 17 1004
+rect -17 -1004 17 -988
+rect 141 988 175 1004
+rect 141 -1004 175 -988
+rect -129 -1072 -113 -1038
+rect -45 -1072 -29 -1038
+rect 29 -1072 45 -1038
+rect 113 -1072 129 -1038
+rect -309 -1176 -275 -1114
+rect 275 -1176 309 -1114
+rect -309 -1210 -213 -1176
+rect 213 -1210 309 -1176
+<< viali >>
+rect -113 1038 -45 1072
+rect 45 1038 113 1072
+rect -175 -988 -141 988
+rect -17 -988 17 988
+rect 141 -988 175 988
+rect -113 -1072 -45 -1038
+rect 45 -1072 113 -1038
+<< metal1 >>
+rect -125 1072 -33 1078
+rect -125 1038 -113 1072
+rect -45 1038 -33 1072
+rect -125 1032 -33 1038
+rect 33 1072 125 1078
+rect 33 1038 45 1072
+rect 113 1038 125 1072
+rect 33 1032 125 1038
+rect -181 988 -135 1000
+rect -181 -988 -175 988
+rect -141 -988 -135 988
+rect -181 -1000 -135 -988
+rect -23 988 23 1000
+rect -23 -988 -17 988
+rect 17 -988 23 988
+rect -23 -1000 23 -988
+rect 135 988 181 1000
+rect 135 -988 141 988
+rect 175 -988 181 988
+rect 135 -1000 181 -988
+rect -125 -1038 -33 -1032
+rect -125 -1072 -113 -1038
+rect -45 -1072 -33 -1038
+rect -125 -1078 -33 -1072
+rect 33 -1038 125 -1032
+rect 33 -1072 45 -1038
+rect 113 -1072 125 -1038
+rect 33 -1078 125 -1072
+<< properties >>
+string FIXED_BBOX -292 -1193 292 1193
+string gencell sky130_fd_pr__nfet_g5v0d10v5
+string library sky130
+string parameters w 10 l 0.5 m 1 nf 2 diffcov 100 polycov 100 guard 1 glc 1 grc 1 gtc 1 gbc 1 tbcov 100 rlcov 100 topc 1 botc 1 poverlap 0 doverlap 1 lmin 0.50 wmin 0.42 compatible {sky130_fd_pr__nfet_01v8 sky130_fd_pr__nfet_01v8_lvt  sky130_fd_bs_flash__special_sonosfet_star  sky130_fd_pr__nfet_g5v0d10v5 sky130_fd_pr__nfet_05v0_nvt  sky130_fd_pr__nfet_03v3_nvt} full_metal 1 viasrc 100 viadrn 100 viagate 100 viagb 0 viagr 0 viagl 0 viagt 0
+<< end >>
