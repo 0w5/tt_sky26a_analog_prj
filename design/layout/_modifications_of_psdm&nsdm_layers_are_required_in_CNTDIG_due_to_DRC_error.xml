@@ -1,0 +1,1929 @@
+<?xml version="1.0" encoding="utf-8"?>
+<report-database>
+ <description>SKY130 DRC runset</description>
+ <original-file/>
+ <generator>drc: script='tech-files/sky130A_mr.drc'</generator>
+ <top-cell>tt_um_shimomi_analog</top-cell>
+ <tags>
+ </tags>
+ <categories>
+  <category>
+   <name>MRW_dnwell.WID.1</name>
+   <description>MRW_dnwell.WID.1: min. dnwell width : 3.0um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MRW_dnwell.SP.1</name>
+   <description>MRW_dnwell.SP.1 : min. dnwell spacing : 6.3um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MR_nwell.WID.1</name>
+   <description>MR_nwell.WID.1 : min. nwell width : 0.84um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MR_nwell.SP.1</name>
+   <description>MR_nwell.SP.1 : min. nwell spacing (merged if less) : 1.27um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MR_nwell.ENC.1</name>
+   <description>MR_nwell.ENC.1 : min enclosure of nwellHole by dnwell : 1.03um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MR_nwell.CON.1</name>
+   <description>MR_nwell.CON.1 : HVnwell must be enclosed by hv marker</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MR_hvtp.WID.1</name>
+   <description>MR_hvtp.WID.1 : min. hvtp width : 0.38um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MR_hvtp.SP.1</name>
+   <description>MR_hvtp.SP.1 : min. hvtp spacing : 0.38um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>pwde.1</name>
+   <description>pwde.1 : min. pwde width : 0.84um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MR_pwde.SP.1</name>
+   <description>MR_pwde.SP.1 : min. pwde inside v20 spacing : 1.27um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>hvtr.1</name>
+   <description>hvtr.1 : min. hvtr width : 0.38um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>hvtr.2</name>
+   <description>hvtr.2 : min. hvtr spacing : 0.38um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MR_hvtr.CON.1</name>
+   <description>MR_hvtr.CON.1 : hvtr must not overlap hvtp</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>lvtn.1a</name>
+   <description>lvtn.1a : min. lvtn width : 0.38um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>lvtn.2</name>
+   <description>lvtn.2 : min. lvtn spacing : 0.38um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MR_lvtn.OVL.2</name>
+   <description>MR_lvtn.OVL.2 : lvtn must not straddle nwell</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MR_ncm.WID.1</name>
+   <description>MR_ncm.WID.1 : min. ncm width : 0.38um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>ncm.2a</name>
+   <description>ncm.2a : min. ncm spacing : 0.38um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>difftap.1</name>
+   <description>difftap.1 : min. diff width across areaid:ce : 0.15um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>difftap.1_a</name>
+   <description>difftap.1_a : min. diff width in periphery : 0.15um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>difftap.2</name>
+   <description>difftap.2 : min. diff width inside areadid:ce : 0.14um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>difftap.1_b</name>
+   <description>difftap.1_b : min. tap width across areaid:ce : 0.15um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MR_diff.WID.2</name>
+   <description>MR_diff.WID.2 : min. tap width in periphery : 0.15um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>difftap.3</name>
+   <description>difftap.3 : min. difftap spacing : 0.27um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>tunm.1</name>
+   <description>tunm.1 : min. tunm width : 0.41um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>tunm.2</name>
+   <description>tunm.2 : min. tunm spacing : 0.5um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MR_tunm.CON.1</name>
+   <description>MR_tunm.CON.1 : use of layer tunm is prohibited</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>thkox.1</name>
+   <description>thkox.1 : min. thkox width inside periphery : 0.6um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>thkox.2</name>
+   <description>thkox.2 : min. thkox spacing inside periphery : 0.7um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MR_thkox.CON.1</name>
+   <description>MR_thkox.CON.1 : thkox must not straddle diff</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MR_hv.SP.10</name>
+   <description>MR_hv.SP.10 : ndiff inside (v12, v20 and thkox) minimum spacing when non-abutting ptap : 1.07um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MR_poly.WID.2</name>
+   <description>MR_poly.WID.2 : min. poly width : 0.15um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MR_poly.SP.1</name>
+   <description>MR_poly.SP.1 : min. poly spacing : 0.21um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MR_poly.SP.4</name>
+   <description>MR_poly.SP.4 : min. poly spacing inside areaid:core : 0.16um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MR_poly.LEN.2</name>
+   <description>MR_poly.LEN.2 : poly:res minimum length for rpoly_hp and rpoly_hp2K resistors : 0.66um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MR_poly.WID.3</name>
+   <description>MR_poly.WID.3 : poly:res minimum width : 0.33um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>ldntm.1</name>
+   <description>ldntm.1 : min. ldntm width inside areaid:core : 0.7um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>ldntm.2</name>
+   <description>ldntm.2 : min. ldntm spacing inside areaid:core : 0.7um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MR_rpm.WID.1</name>
+   <description>MR_rpm.WID.1 : min. rpm width : 1.27um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MR_rpm.SP.1</name>
+   <description>MR_rpm.SP.1 : min. rpm spacing : 0.84um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MR_rdl.WID.1</name>
+   <description>MR_rdl.WID.1 : min. rdl width : 10um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MR_rdl.SP.1</name>
+   <description>MR_rdl.SP.1 : min. rdl spacing : 10um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MR_rdl.CON.1</name>
+   <description>MR_rdl.CON.1 : use of rdl layer is prohibited</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MR_urpm.WID.1</name>
+   <description>MR_urpm.WID.1 : min. rpm width : 1.27um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MR_urpm.SP.1</name>
+   <description>MR_urpm.SP.1 : min. rpm spacing : 0.84um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MR_npc.WID.1</name>
+   <description>MR_npc.WID.1 : min. npc width : 0.27um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>npc.2</name>
+   <description>npc.2 : min. npc spacing, should be manually merged if less than : 0.27um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MR_nsdm.SP.1</name>
+   <description>MR_nsdm.SP.1 : min. nsdm spacing in periphery : 0.38um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MR_nsdm.WID.2</name>
+   <description>MR_nsdm.WID.2 : min. nsdm width in periphery : 0.38um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MR_nsdm.WID.1</name>
+   <description>MR_nsdm.WID.1 : min. diff width across areaid:ce : 0.38um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MR_nsdm.SP.2</name>
+   <description>MR_nsdm.SP.2 : min. spacing across areaid:ce : 0.38um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MR_nsdm.WID.3</name>
+   <description>MR_nsdm.WID.3 : min. nsdm width in areaid:ce : 0.29um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MR_nsdm.SP.3</name>
+   <description>MR_nsdm.SP.3 : min. nsdm spacing in areaid:ce : 0.29um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>nsdm.6a</name>
+   <description>nsdm.6a : min. nsdm spacing on parallel edges in areaid:ce : 0.38um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MR_psdm.SP.1</name>
+   <description>MR_psdm.SP.1 : min. psdm spacing in periphery : 0.38um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MR_psdm.WID.2</name>
+   <description>MR_psdm.WID.2 : min. psdm width in periphery : 0.38um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MR_psdm.WID.1</name>
+   <description>MR_psdm.WID.1 : min. diff width across areaid:ce : 0.38um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MR_psdm.SP.2</name>
+   <description>MR_psdm.SP.2 : min. spacing across areaid:ce : 0.38um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MR_psdm.WID.3</name>
+   <description>MR_psdm.WID.3 : min. psdm width in areaid:ce : 0.29um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MR_psdm.SP.3</name>
+   <description>MR_psdm.SP.3 : min. psdm spacing in areaid:ce : 0.29um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>psdm.6a</name>
+   <description>psdm.6a : min. psdm spacing on parallel edges in areaid:ce : 0.38um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>nsdm_psdm_overlap</name>
+   <description>nsdm_psdm_overlap : nsdm overlaps psdm over active</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>licon.1_c</name>
+   <description>licon.1_c : licon should be rectangle</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MR_licon.SP.1</name>
+   <description>MR_licon.SP.1: min. licon spacing in periphery : 0.17um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>licon.1</name>
+   <description>licon.1: min/max. licon length : 0.17um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>licon.13</name>
+   <description>licon.13:  min. licon on diff spacing to npc in periphery : 0.09um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>licon.13_a</name>
+   <description>licon.13_a:  licon on diff in periphery can't overlap npc</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>licon.17</name>
+   <description>licon.17 : Licons may not overlap both poly and (diff or tap)</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>licon.6</name>
+   <description>licon.6 : npc min enclosure of poly_licon inside areaid:core : 0.045um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MR_licon.ANG.1</name>
+   <description>MR_licon.ANG.1 : licon outside areaid:seal must be orthogonal</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MR_licon.CON.13</name>
+   <description>MR_licon.CON.13 : licon bar outside prec_resistor is prohibited</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MR_licon.CON.xx</name>
+   <description>MR_licon.CON.xx : licon square interacting with rpm/urpm is prohibited</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MR_licon.SP.2</name>
+   <description>MR_licon.SP.2 : licon bar end to end minimum spacing : 0.35um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MR_licon.SP.3</name>
+   <description>MR_licon.SP.3 : licon bar side to side minimum spacing : 0.51um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MR_licon.SP.4</name>
+   <description>MR_licon.SP.4 : licon bar minimum space to licon square : 0.51um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MR_licon.SP.5</name>
+   <description>MR_licon.SP.5 : tap_licon minimum space to tap edge abutting diff : 0.06um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MR_licon.SP.6</name>
+   <description>MR_licon.SP.6 : poly_licon minimum space to psdm (overlap prohibited) : 0.11um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MR_licon.SP.6_overlap</name>
+   <description>MR_licon.SP.6 : licon and psdm must not overlap</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MR_licon.SP.8</name>
+   <description>MR_licon.SP.8 : licon on diff minimum space to gate outside areaid:standardc (overlap prohibited) : 0.055um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MR_licon.WID.1</name>
+   <description>MR_licon.WID.1 : licon (non-bar) minimum/maximum width : 0.17um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MR_licon.WID.2</name>
+   <description>MR_licon.WID.2 : licon bar exact length : 2.0um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MR_nsm.SP.1</name>
+   <description>MR_nsm.SP.1 : nsm min. spacing : 4.0um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MR_nsm.WID.1</name>
+   <description>MR_nsm.WID.1 : nsm min. width : 3.0um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MR_capm.WID.1</name>
+   <description>MR_capm.WID.1 : min. capm width : 1.0um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MR_capm.SP.1</name>
+   <description>MR_capm.SP.1 : min. capm spacing : 0.84um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MR_capm.SP.2</name>
+   <description>MR_capm.SP.2 : Min spacing of capm and met3 not overlapping capm : 0.5um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MR_capm.ENC.1</name>
+   <description>MR_capm.ENC.1 : min. m3 enclosure of capm : 0.14um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MR_capm.ENC.2</name>
+   <description>MR_capm.ENC.2 : min. capm enclosure of via3 : 0.14um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MR_capm.SP.3</name>
+   <description>MR_capm.SP.3 : min. capm spacing to via3 : 0.14um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MR_cap2m.WID.1</name>
+   <description>MR_cap2m.WID.1 : min. cap2m width : 1.0um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MR_cap2m.SP.1</name>
+   <description>MR_cap2m.SP.1 : min. cap2m spacing : 0.84um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MR_cap2m.SP.2</name>
+   <description>MR_cap2m.SP.2 : Min spacing of cap2m and met4 not overlapping cap2m : 0.5um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MR_cap2m.ENC.1</name>
+   <description>MR_cap2m.ENC.1 : min. m4 enclosure of cap2m : 0.14um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MR_cap2m.ENC.2</name>
+   <description>MR_cap2m.ENC.2 : min. cap2m enclosure of via4 : 0.2um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MR_cap2m.SP.3</name>
+   <description>MR_cap2m.SP.3 : min. cap2m spacing to via4 : 0.2um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>hvi.1</name>
+   <description>hvi.1 : min. hvi width : 0.6um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>hvi.2a</name>
+   <description>hvi.2a : min. hvi spacing : 0.7um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>hvntm.1</name>
+   <description>hvntm.1 : min. hvntm width : 0.7um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>hvntm.2</name>
+   <description>hvntm.2 : min. hvntm spacing : 0.7um</description>
+   <categories>
+   </categories>
+  </category>
+ </categories>
+ <cells>
+  <cell>
+   <name>tt_um_shimomi_analog</name>
+   <variant/>
+   <layout-name/>
+   <references>
+   </references>
+  </cell>
+  <cell>
+   <name>CNTDIG_v1</name>
+   <variant/>
+   <layout-name>CNTDIG_v1</layout-name>
+   <references>
+    <ref>
+     <parent>tt_um_shimomi_analog</parent>
+     <trans>r0 *1 87.88,171.17</trans>
+    </ref>
+   </references>
+  </cell>
+  <cell>
+   <name>PLSGEN_v1</name>
+   <variant/>
+   <layout-name>PLSGEN_v1</layout-name>
+   <references>
+    <ref>
+     <parent>tt_um_shimomi_analog</parent>
+     <trans>r0 *1 78.42,177.51</trans>
+    </ref>
+   </references>
+  </cell>
+  <cell>
+   <name>sky130_fd_sc_hd__mux2_1</name>
+   <variant/>
+   <layout-name>sky130_fd_sc_hd__mux2_1</layout-name>
+   <references>
+    <ref>
+     <parent>tt_um_shimomi_analog</parent>
+     <trans>r0 *1 88.51,177.81</trans>
+    </ref>
+   </references>
+  </cell>
+  <cell>
+   <name>sky130_fd_sc_hd__inv_1</name>
+   <variant/>
+   <layout-name>sky130_fd_sc_hd__inv_1</layout-name>
+   <references>
+    <ref>
+     <parent>tt_um_shimomi_analog</parent>
+     <trans>r0 *1 130.37,177.81</trans>
+    </ref>
+   </references>
+  </cell>
+  <cell>
+   <name>sky130_fd_sc_hd__xnor2_1</name>
+   <variant/>
+   <layout-name>sky130_fd_sc_hd__xnor2_1</layout-name>
+   <references>
+    <ref>
+     <parent>tt_um_shimomi_analog</parent>
+     <trans>r0 *1 126.69,177.81</trans>
+    </ref>
+   </references>
+  </cell>
+  <cell>
+   <name>LATARRY_v1</name>
+   <variant/>
+   <layout-name>LATARRY_v1</layout-name>
+   <references>
+    <ref>
+     <parent>tt_um_shimomi_analog</parent>
+     <trans>r0 *1 88.48,195.2</trans>
+    </ref>
+   </references>
+  </cell>
+  <cell>
+   <name>RC10b_v1</name>
+   <variant/>
+   <layout-name>RC10b_v1</layout-name>
+   <references>
+    <ref>
+     <parent>tt_um_shimomi_analog</parent>
+     <trans>r0 *1 88.325,171.22</trans>
+    </ref>
+   </references>
+  </cell>
+ </cells>
+ <items>
+  <item>
+   <tags/>
+   <category>'MR_nsdm.SP.1'</category>
+   <cell>CNTDIG_v1</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>edge-pair: (11.205,6.35;11.665,6.35)|(12.032,6.45;10.838,6.45)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'MR_nsdm.SP.1'</category>
+   <cell>CNTDIG_v1</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>edge-pair: (0.625,6.35;11.205,6.35)|(11.572,6.45;0.63,6.45)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'MR_nsdm.SP.1'</category>
+   <cell>CNTDIG_v1</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>edge-pair: (33.745,6.35;44.325,6.35)|(44.692,6.45;33.378,6.45)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'MR_nsdm.SP.1'</category>
+   <cell>CNTDIG_v1</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>edge-pair: (44.325,6.35;44.785,6.35)|(45.152,6.45;43.958,6.45)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'MR_nsdm.SP.1'</category>
+   <cell>CNTDIG_v1</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>edge-pair: (22.313,30.14;23.507,30.14)|(23.14,30.24;22.68,30.24)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'MR_nsdm.SP.1'</category>
+   <cell>CNTDIG_v1</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>edge-pair: (29.673,30.14;30.867,30.14)|(30.5,30.24;30.04,30.24)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'MR_nsdm.SP.1'</category>
+   <cell>CNTDIG_v1</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>edge-pair: (7.593,30.14;8.787,30.14)|(8.42,30.24;7.96,30.24)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'MR_nsdm.SP.1'</category>
+   <cell>CNTDIG_v1</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>edge-pair: (22.245,6.35;22.705,6.35)|(23.072,6.45;21.878,6.45)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'MR_nsdm.SP.1'</category>
+   <cell>CNTDIG_v1</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>edge-pair: (0.6,30.14;1.427,30.14)|(1.06,30.24;0.6,30.24)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'MR_nsdm.SP.1'</category>
+   <cell>CNTDIG_v1</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>edge-pair: (33.285,6.35;33.745,6.35)|(34.112,6.45;32.918,6.45)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'MR_nsdm.SP.1'</category>
+   <cell>CNTDIG_v1</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>edge-pair: (22.773,30.14;30.407,30.14)|(30.04,30.24;23.14,30.24)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'MR_nsdm.SP.1'</category>
+   <cell>CNTDIG_v1</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>edge-pair: (22.705,6.35;33.285,6.35)|(33.652,6.45;22.338,6.45)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'MR_nsdm.SP.1'</category>
+   <cell>CNTDIG_v1</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>edge-pair: (37.493,30.14;45.127,30.14)|(44.76,30.24;37.86,30.24)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'MR_nsdm.SP.1'</category>
+   <cell>CNTDIG_v1</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>edge-pair: (8.053,30.14;15.687,30.14)|(15.32,30.24;8.42,30.24)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'MR_nsdm.SP.1'</category>
+   <cell>CNTDIG_v1</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>edge-pair: (15.413,30.14;23.047,30.14)|(22.68,30.24;15.78,30.24)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'MR_nsdm.SP.1'</category>
+   <cell>CNTDIG_v1</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>edge-pair: (14.953,30.14;16.147,30.14)|(15.78,30.24;15.32,30.24)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'MR_nsdm.SP.1'</category>
+   <cell>CNTDIG_v1</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>edge-pair: (0.693,30.14;8.327,30.14)|(7.96,30.24;1.06,30.24)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'MR_nsdm.SP.1'</category>
+   <cell>CNTDIG_v1</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>edge-pair: (11.665,6.35;22.245,6.35)|(22.612,6.45;11.298,6.45)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'MR_nsdm.SP.1'</category>
+   <cell>CNTDIG_v1</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>edge-pair: (37.033,30.14;38.227,30.14)|(37.86,30.24;37.4,30.24)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'MR_nsdm.SP.1'</category>
+   <cell>CNTDIG_v1</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>edge-pair: (30.133,30.14;37.767,30.14)|(37.4,30.24;30.5,30.24)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'MR_nsdm.SP.1'</category>
+   <cell>CNTDIG_v1</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>edge-pair: (44.785,6.35;55.277,6.35)|(54.91,6.45;44.418,6.45)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'MR_nsdm.SP.1'</category>
+   <cell>PLSGEN_v1</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>edge-pair: (14.323,0.01;25.637,0.01)|(25.27,0.11;14.69,0.11)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'MR_nsdm.SP.1'</category>
+   <cell>PLSGEN_v1</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>edge-pair: (25.363,0.01;26.557,0.01)|(26.19,0.11;25.73,0.11)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'MR_nsdm.SP.1'</category>
+   <cell>PLSGEN_v1</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>edge-pair: (25.823,0.01;37.137,0.01)|(36.77,0.11;26.19,0.11)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'MR_nsdm.SP.1'</category>
+   <cell>PLSGEN_v1</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>edge-pair: (51.123,0.01;52.317,0.01)|(51.95,0.11;51.49,0.11)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'MR_nsdm.SP.1'</category>
+   <cell>PLSGEN_v1</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>edge-pair: (63.543,0.01;64.737,0.01)|(64.37,0.11;63.91,0.11)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'MR_nsdm.SP.1'</category>
+   <cell>PLSGEN_v1</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>edge-pair: (13.863,0.01;15.057,0.01)|(14.69,0.11;14.23,0.11)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'MR_nsdm.SP.1'</category>
+   <cell>PLSGEN_v1</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>edge-pair: (36.403,0.01;37.597,0.01)|(37.23,0.11;36.77,0.11)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'MR_nsdm.SP.1'</category>
+   <cell>PLSGEN_v1</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>edge-pair: (36.863,0.01;38.057,0.01)|(37.69,0.11;37.23,0.11)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'MR_nsdm.SP.1'</category>
+   <cell>PLSGEN_v1</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>edge-pair: (24.903,0.01;26.097,0.01)|(25.73,0.11;25.27,0.11)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'MR_nsdm.SP.1'</category>
+   <cell>PLSGEN_v1</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>edge-pair: (52.963,0.01;64.277,0.01)|(63.91,0.11;53.33,0.11)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'MR_nsdm.SP.1'</category>
+   <cell>PLSGEN_v1</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>edge-pair: (37.323,0.01;48.637,0.01)|(48.27,0.11;37.69,0.11)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'MR_nsdm.SP.1'</category>
+   <cell>sky130_fd_sc_hd__mux2_1</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>edge-pair: (-0.005,-0.29;4.507,-0.29)|(4.14,-0.19;0,-0.19)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'MR_nsdm.SP.1'</category>
+   <cell>sky130_fd_sc_hd__inv_1</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>edge-pair: (-0.367,-0.29;1.747,-0.29)|(1.38,-0.19;0,-0.19)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'MR_nsdm.SP.1'</category>
+   <cell>sky130_fd_sc_hd__xnor2_1</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>edge-pair: (-0.367,-0.29;3.587,-0.29)|(3.22,-0.19;0,-0.19)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'MR_nsdm.SP.1'</category>
+   <cell>LATARRY_v1</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>edge-pair: (10.58,6.11;11.04,6.11)|(11.407,6.21;10.213,6.21)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'MR_nsdm.SP.1'</category>
+   <cell>LATARRY_v1</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>edge-pair: (32.66,6.11;33.12,6.11)|(33.487,6.21;32.293,6.21)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'MR_nsdm.SP.1'</category>
+   <cell>LATARRY_v1</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>edge-pair: (43.7,6.11;44.16,6.11)|(44.16,6.21;43.333,6.21)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'MR_nsdm.SP.1'</category>
+   <cell>LATARRY_v1</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>edge-pair: (21.62,6.11;22.08,6.11)|(22.447,6.21;21.253,6.21)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'MR_nsdm.SP.1'</category>
+   <cell>LATARRY_v1</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>edge-pair: (0,6.11;10.58,6.11)|(10.947,6.21;0,6.21)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'MR_nsdm.SP.1'</category>
+   <cell>LATARRY_v1</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>edge-pair: (44.16,6.11;44.527,6.11)|(44.16,6.21;43.793,6.21)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'MR_nsdm.SP.1'</category>
+   <cell>LATARRY_v1</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>edge-pair: (11.04,6.11;21.62,6.11)|(21.987,6.21;10.673,6.21)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'MR_nsdm.SP.1'</category>
+   <cell>LATARRY_v1</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>edge-pair: (33.12,6.11;43.7,6.11)|(44.067,6.21;32.753,6.21)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'MR_nsdm.SP.1'</category>
+   <cell>LATARRY_v1</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>edge-pair: (22.08,6.11;32.66,6.11)|(33.027,6.21;21.713,6.21)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'MR_psdm.SP.1'</category>
+   <cell>CNTDIG_v1</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>edge-pair: (30.133,33.34;37.767,33.34)|(37.4,33.44;30.5,33.44)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'MR_psdm.SP.1'</category>
+   <cell>CNTDIG_v1</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>edge-pair: (8.42,33.34;15.32,33.34)|(15.687,33.44;8.053,33.44)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'MR_psdm.SP.1'</category>
+   <cell>CNTDIG_v1</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>edge-pair: (1.06,33.34;7.96,33.34)|(8.327,33.44;0.693,33.44)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'MR_psdm.SP.1'</category>
+   <cell>CNTDIG_v1</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>edge-pair: (23.14,33.34;30.04,33.34)|(30.407,33.44;22.773,33.44)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'MR_psdm.SP.1'</category>
+   <cell>CNTDIG_v1</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>edge-pair: (0.693,33.34;8.327,33.34)|(7.96,33.44;1.06,33.44)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'MR_psdm.SP.1'</category>
+   <cell>CNTDIG_v1</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>edge-pair: (0.6,33.34;1.06,33.34)|(1.427,33.44;0.6,33.44)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'MR_psdm.SP.1'</category>
+   <cell>CNTDIG_v1</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>edge-pair: (7.593,33.34;8.787,33.34)|(8.42,33.44;7.96,33.44)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'MR_psdm.SP.1'</category>
+   <cell>CNTDIG_v1</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>edge-pair: (30.04,33.34;30.5,33.34)|(30.867,33.44;29.673,33.44)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'MR_psdm.SP.1'</category>
+   <cell>CNTDIG_v1</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>edge-pair: (29.673,33.34;30.867,33.34)|(30.5,33.44;30.04,33.44)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'MR_psdm.SP.1'</category>
+   <cell>CNTDIG_v1</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>edge-pair: (22.68,33.34;23.14,33.34)|(23.507,33.44;22.313,33.44)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'MR_psdm.SP.1'</category>
+   <cell>CNTDIG_v1</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>edge-pair: (15.78,33.34;22.68,33.34)|(23.047,33.44;15.413,33.44)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'MR_psdm.SP.1'</category>
+   <cell>CNTDIG_v1</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>edge-pair: (14.953,33.34;16.147,33.34)|(15.78,33.44;15.32,33.44)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'MR_psdm.SP.1'</category>
+   <cell>CNTDIG_v1</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>edge-pair: (7.96,33.34;8.42,33.34)|(8.787,33.44;7.593,33.44)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'MR_psdm.SP.1'</category>
+   <cell>CNTDIG_v1</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>edge-pair: (15.32,33.34;15.78,33.34)|(16.147,33.44;14.953,33.44)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'MR_psdm.SP.1'</category>
+   <cell>CNTDIG_v1</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>edge-pair: (30.5,33.34;37.4,33.34)|(37.4,33.44;30.133,33.44)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'MR_psdm.SP.1'</category>
+   <cell>CNTDIG_v1</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>edge-pair: (0.6,33.34;1.427,33.34)|(1.06,33.44;0.6,33.44)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'MR_psdm.SP.1'</category>
+   <cell>CNTDIG_v1</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>edge-pair: (8.053,33.34;15.687,33.34)|(15.32,33.44;8.42,33.44)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'MR_psdm.SP.1'</category>
+   <cell>CNTDIG_v1</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>edge-pair: (37.4,33.34;37.767,33.34)|(37.4,33.44;37.033,33.44)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'MR_psdm.SP.1'</category>
+   <cell>CNTDIG_v1</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>edge-pair: (22.313,33.34;23.507,33.34)|(23.14,33.44;22.68,33.44)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'MR_psdm.SP.1'</category>
+   <cell>CNTDIG_v1</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>edge-pair: (22.773,33.34;30.407,33.34)|(30.04,33.44;23.14,33.44)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'MR_psdm.SP.1'</category>
+   <cell>CNTDIG_v1</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>edge-pair: (15.413,33.34;23.047,33.34)|(22.68,33.44;15.78,33.44)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'MR_psdm.SP.1'</category>
+   <cell>RC10b_v1</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>edge-pair: (44.8,3.1;55.38,3.1)|(55.38,3.2;44.433,3.2)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'MR_psdm.SP.1'</category>
+   <cell>RC10b_v1</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>edge-pair: (33.76,3.1;44.34,3.1)|(44.707,3.2;33.393,3.2)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'MR_psdm.SP.1'</category>
+   <cell>RC10b_v1</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>edge-pair: (33.3,3.1;33.76,3.1)|(34.127,3.2;32.933,3.2)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'MR_psdm.SP.1'</category>
+   <cell>RC10b_v1</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>edge-pair: (32.933,3.1;44.247,3.1)|(43.88,3.2;33.3,3.2)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'MR_psdm.SP.1'</category>
+   <cell>RC10b_v1</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>edge-pair: (43.513,3.1;44.707,3.1)|(44.34,3.2;43.88,3.2)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'MR_psdm.SP.1'</category>
+   <cell>RC10b_v1</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>edge-pair: (21.893,3.1;33.207,3.1)|(32.84,3.2;22.26,3.2)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'MR_psdm.SP.1'</category>
+   <cell>RC10b_v1</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>edge-pair: (44.34,3.1;44.8,3.1)|(45.167,3.2;43.973,3.2)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'MR_psdm.SP.1'</category>
+   <cell>RC10b_v1</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>edge-pair: (0.18,3.1;0.64,3.1)|(1.007,3.2;0.18,3.2)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'MR_psdm.SP.1'</category>
+   <cell>RC10b_v1</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>edge-pair: (32.473,3.1;33.667,3.1)|(33.3,3.2;32.84,3.2)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'MR_psdm.SP.1'</category>
+   <cell>RC10b_v1</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>edge-pair: (43.973,3.1;55.287,3.1)|(54.92,3.2;44.34,3.2)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'MR_psdm.SP.1'</category>
+   <cell>RC10b_v1</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>edge-pair: (22.72,3.1;33.3,3.1)|(33.667,3.2;22.353,3.2)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'MR_psdm.SP.1'</category>
+   <cell>RC10b_v1</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>edge-pair: (10.393,3.1;11.587,3.1)|(11.22,3.2;10.76,3.2)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'MR_psdm.SP.1'</category>
+   <cell>RC10b_v1</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>edge-pair: (0.64,3.1;11.22,3.1)|(11.587,3.2;0.273,3.2)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'MR_psdm.SP.1'</category>
+   <cell>RC10b_v1</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>edge-pair: (22.26,3.1;22.72,3.1)|(23.087,3.2;21.893,3.2)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'MR_psdm.SP.1'</category>
+   <cell>RC10b_v1</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>edge-pair: (10.853,3.1;22.167,3.1)|(21.8,3.2;11.22,3.2)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'MR_psdm.SP.1'</category>
+   <cell>RC10b_v1</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>edge-pair: (0.18,3.1;11.127,3.1)|(10.76,3.2;0.18,3.2)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'MR_psdm.SP.1'</category>
+   <cell>RC10b_v1</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>edge-pair: (54.553,3.1;55.38,3.1)|(55.38,3.2;54.92,3.2)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'MR_psdm.SP.1'</category>
+   <cell>RC10b_v1</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>edge-pair: (11.68,3.1;22.26,3.1)|(22.627,3.2;11.313,3.2)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'MR_psdm.SP.1'</category>
+   <cell>RC10b_v1</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>edge-pair: (11.22,3.1;11.68,3.1)|(12.047,3.2;10.853,3.2)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'MR_psdm.SP.1'</category>
+   <cell>RC10b_v1</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>edge-pair: (21.433,3.1;22.627,3.1)|(22.26,3.2;21.8,3.2)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'MR_psdm.SP.1'</category>
+   <cell>LATARRY_v1</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>edge-pair: (21.253,2.91;22.447,2.91)|(22.08,3.01;21.62,3.01)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'MR_psdm.SP.1'</category>
+   <cell>LATARRY_v1</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>edge-pair: (21.62,2.91;22.08,2.91)|(22.447,3.01;21.253,3.01)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'MR_psdm.SP.1'</category>
+   <cell>LATARRY_v1</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>edge-pair: (32.753,2.91;44.067,2.91)|(43.7,3.01;33.12,3.01)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'MR_psdm.SP.1'</category>
+   <cell>LATARRY_v1</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>edge-pair: (44.16,2.91;54.74,2.91)|(54.74,3.01;43.793,3.01)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'MR_psdm.SP.1'</category>
+   <cell>LATARRY_v1</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>edge-pair: (43.333,2.91;44.527,2.91)|(44.16,3.01;43.7,3.01)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'MR_psdm.SP.1'</category>
+   <cell>LATARRY_v1</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>edge-pair: (22.08,2.91;32.66,2.91)|(33.027,3.01;21.713,3.01)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'MR_psdm.SP.1'</category>
+   <cell>LATARRY_v1</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>edge-pair: (32.66,2.91;33.12,2.91)|(33.487,3.01;32.293,3.01)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'MR_psdm.SP.1'</category>
+   <cell>LATARRY_v1</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>edge-pair: (10.58,2.91;11.04,2.91)|(11.407,3.01;10.213,3.01)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'MR_psdm.SP.1'</category>
+   <cell>LATARRY_v1</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>edge-pair: (33.12,2.91;43.7,2.91)|(44.067,3.01;32.753,3.01)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'MR_psdm.SP.1'</category>
+   <cell>LATARRY_v1</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>edge-pair: (21.713,2.91;33.027,2.91)|(32.66,3.01;22.08,3.01)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'MR_psdm.SP.1'</category>
+   <cell>LATARRY_v1</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>edge-pair: (10.213,2.91;11.407,2.91)|(11.04,3.01;10.58,3.01)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'MR_psdm.SP.1'</category>
+   <cell>LATARRY_v1</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>edge-pair: (10.673,2.91;21.987,2.91)|(21.62,3.01;11.04,3.01)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'MR_psdm.SP.1'</category>
+   <cell>LATARRY_v1</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>edge-pair: (43.793,2.91;54.74,2.91)|(54.74,3.01;44.16,3.01)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'MR_psdm.SP.1'</category>
+   <cell>LATARRY_v1</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>edge-pair: (43.7,2.91;44.16,2.91)|(44.527,3.01;43.333,3.01)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'MR_psdm.SP.1'</category>
+   <cell>LATARRY_v1</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>edge-pair: (11.04,2.91;21.62,2.91)|(21.987,3.01;10.673,3.01)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'MR_psdm.SP.1'</category>
+   <cell>LATARRY_v1</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>edge-pair: (0,2.91;10.947,2.91)|(10.58,3.01;0,3.01)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'MR_psdm.SP.1'</category>
+   <cell>LATARRY_v1</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>edge-pair: (32.293,2.91;33.487,2.91)|(33.12,3.01;32.66,3.01)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'MR_psdm.SP.1'</category>
+   <cell>LATARRY_v1</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>edge-pair: (0,2.91;10.58,2.91)|(10.947,3.01;0,3.01)</value>
+   </values>
+  </item>
+ </items>
+</report-database>
