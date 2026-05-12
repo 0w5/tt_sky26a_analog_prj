@@ -1,0 +1,34 @@
+** sch_path: /home/ttuser/TT_WORK/rel/PLSGEN_v1.sch
+**.subckt PLSGEN_v1 DVDD GND CK XRST BITA BITB XCNTRST BITSEL LATPLS
+*.ipin CK
+*.ipin XRST
+*.ipin DVDD
+*.ipin GND
+*.ipin BITA
+*.ipin BITB
+*.ipin BITSEL
+*.opin XCNTRST
+*.opin LATPLS
+x8 CK net3 XRST GND GND DVDD DVDD net2 net6 sky130_fd_sc_hd__dfrbp_1
+x102 net2 net3 GND GND DVDD DVDD net5 sky130_fd_sc_hd__xnor2_1
+x46 BITA BITB BITSEL GND GND DVDD DVDD net1 sky130_fd_sc_hd__mux2_1
+x9 DVDD GND net7 net4 net1 XRST TFF_v1
+x11 DVDD GND net3 net8 net4 XRST TFF_v1
+x12 CK net5 XRST GND GND DVDD DVDD XCNTRST net9 sky130_fd_sc_hd__dfrbp_1
+x50 net5 GND GND DVDD DVDD LATPLS sky130_fd_sc_hd__inv_1
+**.ends
+
+* expanding   symbol:  /home/ttuser/TT_WORK/rel/TFF_v1.sym # of pins=6
+** sym_path: /home/ttuser/TT_WORK/rel/TFF_v1.sym
+** sch_path: /home/ttuser/TT_WORK/rel/TFF_v1.sch
+.subckt TFF_v1 DVDD GND XQ Q CK XRST
+*.ipin CK
+*.ipin XRST
+*.opin XQ
+*.opin Q
+*.ipin DVDD
+*.ipin GND
+x0 CK XQ XRST GND GND DVDD DVDD Q XQ sky130_fd_sc_hd__dfrbp_1
+.ends
+
+.end

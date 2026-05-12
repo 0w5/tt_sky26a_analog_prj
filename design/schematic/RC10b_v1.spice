@@ -1,0 +1,42 @@
+** sch_path: /home/ttuser/TT_WORK/rel/RC10b_v1.sch
+**.subckt RC10b_v1 DVDD GND out7 out9 out2 out8 out5 out6 out4 out3 CK out1 out0 XRST
+*.ipin CK
+*.ipin XRST
+*.ipin DVDD
+*.ipin GND
+*.opin out9
+*.opin out7
+*.opin out8
+*.opin out6
+*.opin out5
+*.opin out4
+*.opin out3
+*.opin out2
+*.opin out1
+*.opin out0
+x0 DVDD GND net1 out0 CK XRST TFF_v1
+x1 DVDD GND net2 out1 out0 XRST TFF_v1
+x2 DVDD GND net3 out2 out1 XRST TFF_v1
+x3 DVDD GND net4 out3 out2 XRST TFF_v1
+x4 DVDD GND net5 out4 out3 XRST TFF_v1
+x5 DVDD GND net6 out5 out4 XRST TFF_v1
+x6 DVDD GND net7 out6 out5 XRST TFF_v1
+x7 DVDD GND net8 out7 out6 XRST TFF_v1
+x8 DVDD GND net9 out8 out7 XRST TFF_v1
+x9 DVDD GND net10 out9 out8 XRST TFF_v1
+**.ends
+
+* expanding   symbol:  /home/ttuser/TT_WORK/rel/TFF_v1.sym # of pins=6
+** sym_path: /home/ttuser/TT_WORK/rel/TFF_v1.sym
+** sch_path: /home/ttuser/TT_WORK/rel/TFF_v1.sch
+.subckt TFF_v1 DVDD GND XQ Q CK XRST
+*.ipin CK
+*.ipin XRST
+*.opin XQ
+*.opin Q
+*.ipin DVDD
+*.ipin GND
+x0 CK XQ XRST GND GND DVDD DVDD Q XQ sky130_fd_sc_hd__dfrbp_1
+.ends
+
+.end

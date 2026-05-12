@@ -1,0 +1,11 @@
+** sch_path: /home/ttuser/TT_WORK/rel/TFF_v1.sch
+**.subckt TFF_v1 DVDD GND XQ Q CK XRST
+*.ipin CK
+*.ipin XRST
+*.opin XQ
+*.opin Q
+*.ipin DVDD
+*.ipin GND
+x0 CK XQ XRST GND GND DVDD DVDD Q XQ sky130_fd_sc_hd__dfrbp_1
+**.ends
+.end

@@ -1,0 +1,146 @@
+** sch_path: /home/ttuser/TT_WORK/rel/CNTDIG_v1.sch
+**.subckt CNTDIG_v1 DCK BITSEL OUT0 OUT1 CNTIN OUT2 OUT3 OUT4 OUT5 OUT6 OUT7 DVDD OUT8 GND OUT9 CK EN
+*.ipin CK
+*.ipin EN
+*.ipin DVDD
+*.ipin GND
+*.ipin CNTIN
+*.ipin BITSEL
+*.opin OUT0
+*.opin OUT1
+*.opin OUT2
+*.opin OUT3
+*.opin OUT4
+*.opin OUT5
+*.opin OUT6
+*.opin OUT7
+*.opin OUT8
+*.opin OUT9
+*.opin DCK
+x2 DVDD GND CK EN net1 net2 XCNTRST BITSEL DCK_pre PLSGEN_v1
+x3 net13 net14 net12 net7 net15 net16 net11 net6 net17 net18 net10 net5 net19 net20 net9 net4 net21 net22 net8 DVDD net3 GND
++ DCK_pre EN LATARRY_v1
+x1 DVDD GND net10 net12 net5 net11 net8 net9 net7 net6 CNTIN net4 net3 XCNTRST RC10b_v1
+x4 DVDD GND net1 net2 net23 net24 net25 net26 net27 net28 CK net29 net30 XCNTRST RC10b_v1
+x162 net22 GND GND DVDD DVDD OUT0 sky130_fd_sc_hd__bufbuf_8
+x5 net20 GND GND DVDD DVDD OUT1 sky130_fd_sc_hd__bufbuf_8
+x6 net18 GND GND DVDD DVDD OUT2 sky130_fd_sc_hd__bufbuf_8
+x7 net16 GND GND DVDD DVDD OUT3 sky130_fd_sc_hd__bufbuf_8
+x8 net14 GND GND DVDD DVDD OUT4 sky130_fd_sc_hd__bufbuf_8
+x9 net21 GND GND DVDD DVDD OUT5 sky130_fd_sc_hd__bufbuf_8
+x10 net19 GND GND DVDD DVDD OUT6 sky130_fd_sc_hd__bufbuf_8
+x11 net17 GND GND DVDD DVDD OUT7 sky130_fd_sc_hd__bufbuf_8
+x12 net15 GND GND DVDD DVDD OUT8 sky130_fd_sc_hd__bufbuf_8
+x13 net13 GND GND DVDD DVDD OUT9 sky130_fd_sc_hd__bufbuf_8
+x14 DCK_pre GND GND DVDD DVDD DCK sky130_fd_sc_hd__bufbuf_8
+**.ends
+
+* expanding   symbol:  /home/ttuser/TT_WORK/rel/PLSGEN_v1.sym # of pins=9
+** sym_path: /home/ttuser/TT_WORK/rel/PLSGEN_v1.sym
+** sch_path: /home/ttuser/TT_WORK/rel/PLSGEN_v1.sch
+.subckt PLSGEN_v1 DVDD GND CK XRST BITA BITB XCNTRST BITSEL LATPLS
+*.ipin CK
+*.ipin XRST
+*.ipin DVDD
+*.ipin GND
+*.ipin BITA
+*.ipin BITB
+*.ipin BITSEL
+*.opin XCNTRST
+*.opin LATPLS
+x8 CK net3 XRST GND GND DVDD DVDD net2 net6 sky130_fd_sc_hd__dfrbp_1
+x102 net2 net3 GND GND DVDD DVDD net5 sky130_fd_sc_hd__xnor2_1
+x46 BITA BITB BITSEL GND GND DVDD DVDD net1 sky130_fd_sc_hd__mux2_1
+x9 DVDD GND net7 net4 net1 XRST TFF_v1
+x11 DVDD GND net3 net8 net4 XRST TFF_v1
+x12 CK net5 XRST GND GND DVDD DVDD XCNTRST net9 sky130_fd_sc_hd__dfrbp_1
+x50 net5 GND GND DVDD DVDD LATPLS sky130_fd_sc_hd__inv_1
+.ends
+
+
+* expanding   symbol:  /home/ttuser/TT_WORK/rel/LATARRY_v1.sym # of pins=24
+** sym_path: /home/ttuser/TT_WORK/rel/LATARRY_v1.sym
+** sch_path: /home/ttuser/TT_WORK/rel/LATARRY_v1.sch
+.subckt LATARRY_v1 O9 O4 D9 D4 O8 O3 D8 D3 O7 O2 D7 D2 O6 O1 D6 D1 O5 O0 D5 DVDD D0 GND CK XRST
+*.ipin CK
+*.ipin XRST
+*.ipin DVDD
+*.ipin GND
+*.ipin D0
+*.opin O0
+*.ipin D1
+*.opin O1
+*.ipin D2
+*.opin O2
+*.ipin D3
+*.opin O3
+*.ipin D4
+*.opin O4
+*.ipin D5
+*.opin O5
+*.ipin D7
+*.opin O7
+*.ipin D8
+*.opin O6
+*.ipin D6
+*.opin O8
+*.ipin D9
+*.opin O9
+x0 CK D0 XRST GND GND DVDD DVDD O0 net1 sky130_fd_sc_hd__dfrbp_1
+x1 CK D1 XRST GND GND DVDD DVDD O1 net2 sky130_fd_sc_hd__dfrbp_1
+x2 CK D2 XRST GND GND DVDD DVDD O2 net3 sky130_fd_sc_hd__dfrbp_1
+x3 CK D3 XRST GND GND DVDD DVDD O3 net4 sky130_fd_sc_hd__dfrbp_1
+x4 CK D4 XRST GND GND DVDD DVDD O4 net5 sky130_fd_sc_hd__dfrbp_1
+x5 CK D5 XRST GND GND DVDD DVDD O5 net6 sky130_fd_sc_hd__dfrbp_1
+x6 CK D6 XRST GND GND DVDD DVDD O6 net7 sky130_fd_sc_hd__dfrbp_1
+x7 CK D7 XRST GND GND DVDD DVDD O7 net8 sky130_fd_sc_hd__dfrbp_1
+x8 CK D8 XRST GND GND DVDD DVDD O8 net9 sky130_fd_sc_hd__dfrbp_1
+x9 CK D9 XRST GND GND DVDD DVDD O9 net10 sky130_fd_sc_hd__dfrbp_1
+.ends
+
+
+* expanding   symbol:  /home/ttuser/TT_WORK/rel/RC10b_v1.sym # of pins=14
+** sym_path: /home/ttuser/TT_WORK/rel/RC10b_v1.sym
+** sch_path: /home/ttuser/TT_WORK/rel/RC10b_v1.sch
+.subckt RC10b_v1 DVDD GND out7 out9 out2 out8 out5 out6 out4 out3 CK out1 out0 XRST
+*.ipin CK
+*.ipin XRST
+*.ipin DVDD
+*.ipin GND
+*.opin out9
+*.opin out7
+*.opin out8
+*.opin out6
+*.opin out5
+*.opin out4
+*.opin out3
+*.opin out2
+*.opin out1
+*.opin out0
+x0 DVDD GND net1 out0 CK XRST TFF_v1
+x1 DVDD GND net2 out1 out0 XRST TFF_v1
+x2 DVDD GND net3 out2 out1 XRST TFF_v1
+x3 DVDD GND net4 out3 out2 XRST TFF_v1
+x4 DVDD GND net5 out4 out3 XRST TFF_v1
+x5 DVDD GND net6 out5 out4 XRST TFF_v1
+x6 DVDD GND net7 out6 out5 XRST TFF_v1
+x7 DVDD GND net8 out7 out6 XRST TFF_v1
+x8 DVDD GND net9 out8 out7 XRST TFF_v1
+x9 DVDD GND net10 out9 out8 XRST TFF_v1
+.ends
+
+
+* expanding   symbol:  /home/ttuser/TT_WORK/rel/TFF_v1.sym # of pins=6
+** sym_path: /home/ttuser/TT_WORK/rel/TFF_v1.sym
+** sch_path: /home/ttuser/TT_WORK/rel/TFF_v1.sch
+.subckt TFF_v1 DVDD GND XQ Q CK XRST
+*.ipin CK
+*.ipin XRST
+*.opin XQ
+*.opin Q
+*.ipin DVDD
+*.ipin GND
+x0 CK XQ XRST GND GND DVDD DVDD Q XQ sky130_fd_sc_hd__dfrbp_1
+.ends
+
+.end
