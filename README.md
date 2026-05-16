@@ -33,11 +33,11 @@ An analog multiplexer connects the unbuffered BGR and PTAT voltages to an analog
 | `ua[0]`        | InOut 3.3 V     | AIO           | Analog multiplexer Input/Output for debugging. Keep open during default operation.                                                 | 
 
 ### Block Diagram
-!["circuit diagram"]("https://github.com/0w5/tt_sky26a_analog_prj/blob/47a5d1cabff5f2909f487f12094f321d555f06cb/img/circuit.png?raw=true")
+!["circuit diagram"]("https://raw.githubusercontent.com/0w5/tt_sky26a_analog_prj/refs/heads/temp/img/circuit.png")
 
 
 ### Layout
-!["layout"]("https://github.com/0w5/tt_sky26a_analog_prj/blob/47a5d1cabff5f2909f487f12094f321d555f06cb/img/layout.png?raw=true")
+!["layout"]("https://raw.githubusercontent.com/0w5/tt_sky26a_analog_prj/refs/heads/temp/img/layout.png")
 
 ### Design Tools and Verification Results
 - Schematic: xschem
