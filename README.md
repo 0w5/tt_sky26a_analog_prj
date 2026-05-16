@@ -3,10 +3,10 @@
 # A Temperature Sensor with Delta-sigma Modulator
 
 ## Overview
-This project contains a bandgap reference (BGR), a delta-sigma modulator (DSM), and a simple decimation filter.
-A BGR generates a proportional-to-absolute-temperature (PTAT) voltage and a first-order 1-bit continuous-time DSM converts it to a digital bitstream. This design cannot calculate the actual temperature directly due to chip variations. Hence, a chip measurement for calibration and an off-chip calculation are required.
-Instead of a conventional CIC filter, a ripple-counter-based decimation filter is experimentally implemented. This filter occupies a small area and provides lower bit depth and throughput.
-An analog multiplexer connects the unbuffered BGR and PTAT voltages to an analog I/O pin. Thus, the DSM input and the internal reference voltage can be controlled by an external voltage source for debugging. 
+This project contains a bandgap reference (BGR), a delta-sigma modulator (DSM), and a simple decimation filter.  
+A BGR generates a proportional-to-absolute-temperature (PTAT) voltage and a first-order 1-bit continuous-time DSM converts it to a digital bitstream. This design cannot calculate the actual temperature directly due to chip variations. Hence, a chip measurement for calibration and an off-chip calculation are required.  
+Instead of a conventional CIC filter, a ripple-counter-based decimation filter is experimentally implemented. This filter occupies a small area and provides lower bit depth and throughput.  
+An analog multiplexer connects the unbuffered BGR and PTAT voltages to an analog I/O pin. Thus, the DSM input and the internal reference voltage can be controlled by an external voltage source for debugging.   
 
 ### General Specifications
 - Technology: SKY130A 
@@ -33,11 +33,11 @@ An analog multiplexer connects the unbuffered BGR and PTAT voltages to an analog
 | `ua[0]`        | InOut 3.3 V     | AIO           | Analog multiplexer Input/Output for debugging. Keep open during default operation.                                                 | 
 
 ### Block Diagram
-!["circuit diagram"]("https://github.com/0w5/tt_sky26a_analog_prj/blob/47a5d1cabff5f2909f487f12094f321d555f06cb/img/circuit.png")
+!["circuit diagram"]("https://github.com/0w5/tt_sky26a_analog_prj/blob/47a5d1cabff5f2909f487f12094f321d555f06cb/img/circuit.png?raw=true")
 
 
 ### Layout
-!["layout"]("https://github.com/0w5/tt_sky26a_analog_prj/blob/47a5d1cabff5f2909f487f12094f321d555f06cb/img/layout.png")
+!["layout"]("https://github.com/0w5/tt_sky26a_analog_prj/blob/47a5d1cabff5f2909f487f12094f321d555f06cb/img/layout.png?raw=true")
 
 ### Design Tools and Verification Results
 - Schematic: xschem
