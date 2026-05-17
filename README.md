@@ -15,6 +15,12 @@ An analog multiplexer connects the unbuffered BGR and PTAT voltages to an analog
 - Input Clock frequency (fs): 2 MHz (nom.)
 - Output data rate: 1 bit@fs, optional: 8 bit@fs/(256+1), 10 bit@fs/(1024+1)
 - Output data precision is not fully characterized yet.
+- This design is assigned at the address of #517 in Tiny Tapeout SKY 26a.
+- 
+### What is Tiny Tapeout?
+Tiny Tapeout is an educational project that aims to make it easier and cheaper than ever to get your digital designs manufactured on a real chip.
+To learn more and get started, visit https://tinytapeout.com.
+
 ### Pin Functions
 | Pin Name       | Pin Attribute   | Function Name | Description                                                                                       | 
 | -------------- | --------------- | ------------- | ------------------------------------------------------------------------------------------------- | 
@@ -25,11 +31,11 @@ An analog multiplexer connects the unbuffered BGR and PTAT voltages to an analog
 | `ui_in[0]`     | In 1.8 V        | AIOSEL        | Selection for analog multiplexer output. L:VPTAT, H:VREF                                          | 
 | `ui_in[1]`     | In 1.8 V        | BITSEL        | Selection for bit depth of decimated data. L: 8 bit, H: 10 bit                                    | 
 | `ui_in[2]`     | In 1.8 V        | EN            | Enable the decimation filter. L: disable, H: enable.                                              | 
-| `uo_out[0]`    | Out 1.8 V       | BITOUT        | Bitstream output from DSM                                                                         | 
+| `uo_out[0]`    | Out 1.8 V       | XBITOUT       | Inverted bitstream output from DSM                                                                 | 
 | `uo_out[7:1]`  | Out 1.8 V       | OUT[6:0]      | Data output from the decimation filter                                                            | 
 | `uio_out[2:0]` | Out 1.8 V       | OUT[9:7]      | Data output from the decimation filter. OUT[7:0] are valid if 8-bit mode is selected.                      | 
 | `uio_out[3]`   | Clock Out 1.8 V | DCK           | Downsampled clock for decimated data                                                              | 
-| `ua[0]`        | InOut 3.3 V     | AIO           | Analog multiplexer input/output for debugging. Keep open during default operation.                                                 | 
+| `ua[0]`        | InOut 3.3 V     | AIO           | Analog multiplexer input/output for debugging. Keep open during default operation.  PCB pin: B4              | 
 
 
 ### Circuit Diagram
