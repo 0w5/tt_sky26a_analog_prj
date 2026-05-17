@@ -1,4 +1,4 @@
-
+![](../../workflows/gds/badge.svg) ![](../../workflows/docs/badge.svg)  
 # A Temperature Sensor with Delta-sigma Modulator
 
 ## Overview
