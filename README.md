@@ -2,10 +2,11 @@
 # A Temperature Sensor with Delta-sigma Modulator
 
 ## Overview
-This experimental project demonstrates a sensing circuit with a bandgap reference (BGR), a delta-sigma modulator (DSM), and a simple decimation filter.
-A BGR generates a proportional-to-absolute-temperature (PTAT) voltage for temperature sensing. Then, a first-order 1-bit continuous-time DSM converts the analog PTAT voltage into a digital bitstream. This circuit cannot calculate the absolute temperature due to process variations. Hence, chip-by-chip calibration measurements and off-chip calculations are required.
-Instead of a conventional CIC filter, a ripple-counter-based decimation filter is experimentally implemented. This filter occupies a small area at the cost of reduced bit depth and throughput.
-An analog multiplexer connects the unbuffered BGR and PTAT voltages to an analog pin. This allows the DSM input and internal reference voltage to be overridden by an external voltage source for debugging.
+This experimental project demonstrates a sensing circuit with a bandgap reference (BGR), a delta-sigma modulator (DSM), and a simple decimation filter.  
+The BGR generates a proportional-to-absolute-temperature (PTAT) voltage for temperature sensing. A first-order 1-bit continuous-time DSM then converts the analog PTAT voltage into a digital bitstream. This circuit cannot determine the absolute temperature due to process variations. Hence, chip-by-chip calibration measurements and off-chip calculations are required.  
+Instead of a conventional CIC filter, a ripple-counter-based decimation filter is experimentally implemented. This filter occupies a small area at the cost of reduced bit depth and throughput.  
+An analog multiplexer connects the unbuffered BGR and PTAT voltages to an analog pin. This allows the DSM input and internal reference voltage to be overridden by an external voltage source for debugging.  
+This project was submitted to Tiny Tapeout SKY26a. [https://tinytapeout.com](https://tinytapeout.com/chips/ttsky26a/)
 
 ### General Specifications
 - Technology: SKY130A 
@@ -16,7 +17,7 @@ An analog multiplexer connects the unbuffered BGR and PTAT voltages to an analog
 - Output data rate: 1 bit@fs, optional: 8 bit@fs/(256+1), 10 bit@fs/(1024+1)
 - Output data precision is not fully characterized.
 - The delta-sigma input can be overridden through a bidirectional analog pin.
-- This design is assigned to #517 in Tiny Tapeout SKY26a. [https://tinytapeout.com.](https://tinytapeout.com/chips/ttsky26a/)
+- This design is assigned to #517.
 
 ### Pin Functions
 | Pin Name       | Pin Attribute   | Function Name | Description                                                                                       | 
@@ -32,7 +33,7 @@ An analog multiplexer connects the unbuffered BGR and PTAT voltages to an analog
 | `uo_out[7:1]`  | Out 1.8 V       | OUT[6:0]      | Data output from the decimation filter                                                            | 
 | `uio_out[2:0]` | Out 1.8 V       | OUT[9:7]      | Data output from the decimation filter. OUT[7:0] are valid if 8-bit mode is selected.                      | 
 | `uio_out[3]`   | Clock Out 1.8 V | DCK           | Downsampled clock for decimated data                                                              | 
-| `ua[0]`        | InOut 3.3 V     | AIO           | Analog multiplexer input/output for debugging. Keep open during default operation.  PCB pin: B4              | 
+| `ua[0]`        | InOut 3.3 V     | AIO           | Analog multiplexer input/output for debugging. Keep open during default operation. PCB pin: B4              | 
 
 
 ### Circuit Diagram
@@ -60,7 +61,7 @@ An analog multiplexer connects the unbuffered BGR and PTAT voltages to an analog
 - Netlists between extracted layouts and spice models are not fully matched for standard cells.
 - A functional bug has been reported in the decimation filter. 
 
-### Author
+### Designer
 しもみ (Shimomi) 
  - Twitter: @0w5
  - Email: shimomi at starholic. net
