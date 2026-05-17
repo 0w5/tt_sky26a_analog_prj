@@ -3,23 +3,20 @@
 
 ## Overview
 This experimental project demonstrates a sensing circuit with a bandgap reference (BGR), a delta-sigma modulator (DSM), and a simple decimation filter.
-A BGR generates a proportional-to-absolute-temperature (PTAT) voltage and a first-order 1-bit continuous-time DSM converts it to a digital bitstream. This design cannot calculate the actual temperature directly due to chip variations. Hence, a chip measurement for calibration and an off-chip calculation are required.
-Instead of a conventional CIC filter, a ripple-counter-based decimation filter is experimentally implemented. This filter occupies a small area and provides lower bit depth and throughput.
-An analog multiplexer connects the unbuffered BGR and PTAT voltages to an analog I/O pin. Thus, the DSM input and the internal reference voltage can be controlled by an external voltage source for debugging. 
+A BGR generates a proportional-to-absolute-temperature (PTAT) voltage for temperature sensing. Then, a first-order 1-bit continuous-time DSM converts the analog PTAT voltage into a digital bitstream. This circuit cannot calculate the absolute temperature due to process variations. Hence, chip-by-chip calibration measurements and off-chip calculations are required.
+Instead of a conventional CIC filter, a ripple-counter-based decimation filter is experimentally implemented. This filter occupies a small area at the cost of reduced bit depth and throughput.
+An analog multiplexer connects the unbuffered BGR and PTAT voltages to an analog pin. This allows the DSM input and internal reference voltage to be overridden by an external voltage source for debugging.
 
 ### General Specifications
 - Technology: SKY130A 
 - Area: 160 x 225 μm (1x2 tiles)
-- Power Supply: 3.3+-0.3 V (VAPWR), 1.8+-0.1 V (VDPWR)
-- Operating temperature range: -40℃ to 140℃
-- Input Clock frequency (fs): 2 MHz (nom.)
+- Power Supply: 3.3±0.3 V (VAPWR), 1.8±0.1 V (VDPWR)
+- Temperature range: -40°C to 100°C
+- Input clock frequency (fs): 2 MHz (nom.)
 - Output data rate: 1 bit@fs, optional: 8 bit@fs/(256+1), 10 bit@fs/(1024+1)
-- Output data precision is not fully characterized yet.
-- This design is assigned at the address of #517 in Tiny Tapeout SKY 26a.
-- 
-### What is Tiny Tapeout?
-Tiny Tapeout is an educational project that aims to make it easier and cheaper than ever to get your digital designs manufactured on a real chip.
-To learn more and get started, visit https://tinytapeout.com.
+- Output data precision is not fully characterized.
+- The delta-sigma input can be overridden through a bidirectional analog pin.
+- This design is assigned to #517 in Tiny Tapeout SKY26a. [https://tinytapeout.com.](https://tinytapeout.com/chips/ttsky26a/)
 
 ### Pin Functions
 | Pin Name       | Pin Attribute   | Function Name | Description                                                                                       | 
@@ -75,41 +72,41 @@ Specifications
 |                              | Minimum    | Typical   | Maximum    | Note                              | 
 | ---------------------------- | ---------- | --------- | ---------- | --------------------------------- | 
 | VREF voltage                 | 1.116 V    | 1.153 V   | 1.217 V    |                                   | 
-| VREF temperature dependency  | -80 μV/℃ | 60 μV/℃ | 440 μV/℃ |                                       | 
+| VREF temperature dependency  | -80 μV/°C | 60 μV/°C | 440 μV/°C |                                       | 
 | VREF PSRR                    | 4.0 dB    | -         | -          | worst value from DC to 1 GHz        | 
-| VPTAT                        | 0.80 V      | 1.16 V    | 1.85 V      | -40℃ to 140℃                    | 
-| VPTAT temperature dependency | 3.9 mV/℃  | 4.4 mV/℃ | 5.4 mV/℃  |                                   | 
+| VPTAT                        | 0.80 V      | 1.16 V    | 1.85 V      | -40°C to 140°C                    | 
+| VPTAT temperature dependency | 3.9 mV/°C  | 4.4 mV/°C | 5.4 mV/°C  |                                   | 
 | VPTAT PSRR                   | 1.0 dB    | -         | -          | worst value from DC to 1 GHz       | 
 | IREF output current          | 15.3 μA   | 18.0 μA  | 20.7 μA   | changed from 30μA to 18μA in v2 | 
 
 Temperature dependency  
-corner: tt, temperature: sweep℃, power typ.  
+corner: tt, temperature: sweep°C, power typ.  
 ![""](https://github.com/0w5/tt_sky26a_analog_prj/blob/temp/img/bgr_temp_tt.png)
 
-corner: ff, temperature: sweep℃, power max.  
+corner: ff, temperature: sweep°C, power max.  
 ![""](https://github.com/0w5/tt_sky26a_analog_prj/blob/temp/img/bgr_temp_ff.png)
 
-corner: ss, temperature: sweep℃, power min.  
+corner: ss, temperature: sweep°C, power min.  
 ![""](https://github.com/0w5/tt_sky26a_analog_prj/blob/temp/img/bgr_temp_ss.png)
 
 Line regulation  
-corner: tt, temperature: 25℃, power sweep.  
+corner: tt, temperature: 25°C, power sweep.  
 ![""](https://github.com/0w5/tt_sky26a_analog_prj/blob/temp/img/bgr_dc_tt.png)
 
-corner: ff, temperature: 140℃, power sweep.  
+corner: ff, temperature: 140°C, power sweep.  
 ![""](https://github.com/0w5/tt_sky26a_analog_prj/blob/temp/img/bgr_dc_ff.png)
 
-corner: ss, temperature: -40℃, power sweep.  
+corner: ss, temperature: -40°C, power sweep.  
 ![""](https://github.com/0w5/tt_sky26a_analog_prj/blob/temp/img/bgr_dc_ss.png)
 
 PSRR  
-corner: tt, temperature: 25℃, power typ.  
+corner: tt, temperature: 25°C, power typ.  
 ![""](https://github.com/0w5/tt_sky26a_analog_prj/blob/temp/img/bgr_psrr_tt.png)
 
-corner: ff, temperature: 140℃, power max.  
+corner: ff, temperature: 140°C, power max.  
 ![""](https://github.com/0w5/tt_sky26a_analog_prj/blob/temp/img/bgr_psrr_ff.png)
 
-corner: ss, temperature: -40℃, power min.  
+corner: ss, temperature: -40°C, power min.  
 ![""](https://github.com/0w5/tt_sky26a_analog_prj/blob/temp/img/bgr_psrr_ss.png)
 
 Known Issues
@@ -127,33 +124,33 @@ Specifications
 | PSRR                 | 39 dB       | 40 dB       | -       | Gain = +1, worst value from DC to 1 GHz | 
 
 Bode plot  
-corner: tt, temperature: 25℃, power typ.  
+corner: tt, temperature: 25°C, power typ.  
 ![""](https://github.com/0w5/tt_sky26a_analog_prj/blob/temp/img/op_bode_tt.png)
 
-corner: ff, temperature: 140℃, power max.  
+corner: ff, temperature: 140°C, power max.  
 ![""](https://github.com/0w5/tt_sky26a_analog_prj/blob/temp/img/op_bode_ff.png)
 
-corner: ss, temperature: -40℃, power min.  
+corner: ss, temperature: -40°C, power min.  
 ![""](https://github.com/0w5/tt_sky26a_analog_prj/blob/temp/img/op_bode_ss.png)
 
 Output voltage range (gain = +1)  
-corner: tt, temperature: 25℃, power typ.  
+corner: tt, temperature: 25°C, power typ.  
 ![""](https://github.com/0w5/tt_sky26a_analog_prj/blob/temp/img/op_range_tt.png)
 
-corner: ff, temperature: 140℃, power max.  
+corner: ff, temperature: 140°C, power max.  
 ![""](https://github.com/0w5/tt_sky26a_analog_prj/blob/temp/img/op_range_ff.png)
 
-corner: ss, temperature: -40℃, power min.  
+corner: ss, temperature: -40°C, power min.  
 ![""](https://github.com/0w5/tt_sky26a_analog_prj/blob/temp/img/op_range_ss.png)
   
 PSRR  
-corner: tt, temperature: 25℃, power typ.  
+corner: tt, temperature: 25°C, power typ.  
 ![""](https://github.com/0w5/tt_sky26a_analog_prj/blob/temp/img/op_psrr_tt.png)
 
-corner: ff, temperature: 140℃, power max.  
+corner: ff, temperature: 140°C, power max.  
 ![""](https://github.com/0w5/tt_sky26a_analog_prj/blob/temp/img/op_psrr_ff.png)
 
-corner: ss, temperature: -40℃, power min.  
+corner: ss, temperature: -40°C, power min.  
 ![""](https://github.com/0w5/tt_sky26a_analog_prj/blob/temp/img/op_psrr_ss.png)
  
 ### Comparator (comp3V3_v2)
@@ -164,13 +161,13 @@ Specifications
 | Output delay       | -       | 13 ns   | 18 ns   | 1-pF output load, 10 MHz / 1 Vpeak ramp wave input, | 
 
 Transient waveform  
-corner: tt, temperature: 25℃, power typ.  
+corner: tt, temperature: 25°C, power typ.  
 ![""](https://github.com/0w5/tt_sky26a_analog_prj/blob/temp/img/comp_tt.png)
 
-corner: ff, temperature: 140℃, power max.  
+corner: ff, temperature: 140°C, power max.  
 ![""](https://github.com/0w5/tt_sky26a_analog_prj/blob/temp/img/comp_ff.png)
 
-corner: ss, temperature: -40℃, power min.  
+corner: ss, temperature: -40°C, power min.  
 ![""](https://github.com/0w5/tt_sky26a_analog_prj/blob/temp/img/comp_ss.png)
 
 
@@ -182,13 +179,13 @@ Specifications
 | Operating frequency | 10 MHz  | -       | -       | 1-pF output load | 
 
 Transient waveform  
-corner: tt, temperature: 25℃, power typ.  
+corner: tt, temperature: 25°C, power typ.  
 ![""](https://github.com/0w5/tt_sky26a_analog_prj/blob/temp/img/L2H_tt.png)
 
-corner: ff, temperature: 140℃, power max.  
+corner: ff, temperature: 140°C, power max.  
 ![""](https://github.com/0w5/tt_sky26a_analog_prj/blob/temp/img/L2H_ff.png)
 
-corner: ss, temperature: -40℃, power min.  
+corner: ss, temperature: -40°C, power min.  
 ![""](https://github.com/0w5/tt_sky26a_analog_prj/blob/temp/img/L2H_ss.png)
 
 
@@ -200,13 +197,13 @@ Specifications
 | Operating frequency | 25 MHz  |         |         | 5-pF output load | 
 
 Transient waveform  
-corner: tt, temperature: 25℃, power typ.  
+corner: tt, temperature: 25°C, power typ.  
 ![""](https://github.com/0w5/tt_sky26a_analog_prj/blob/temp/img/H2L_tt.png)
 
-corner: ff, temperature: 140℃, power max.  
+corner: ff, temperature: 140°C, power max.  
 ![""](https://github.com/0w5/tt_sky26a_analog_prj/blob/temp/img/H2L_ff.png)
 
-corner: ss, temperature: -40℃, power min.  
+corner: ss, temperature: -40°C, power min.  
 ![""](https://github.com/0w5/tt_sky26a_analog_prj/blob/temp/img/H2L_ss.png)
 
 
@@ -220,13 +217,13 @@ Specifications
 Note that setup time and hold time are not characterized yet.
 
 Transient waveform  
-corner: tt, temperature: 25℃, power typ.  
+corner: tt, temperature: 25°C, power typ.  
 ![""](https://github.com/0w5/tt_sky26a_analog_prj/blob/temp/img/dff_tt.png)
 
-corner: ff, temperature: 140℃, power max.  
+corner: ff, temperature: 140°C, power max.  
 ![""](https://github.com/0w5/tt_sky26a_analog_prj/blob/temp/img/dff_ff.png)
 
-corner: ss, temperature: -40℃, power min.  
+corner: ss, temperature: -40°C, power min.  
 ![""](https://github.com/0w5/tt_sky26a_analog_prj/blob/temp/img/dff_ss.png)
 
 ### 2-Channel Analog Multiplexer (MUX_v1)
@@ -237,15 +234,15 @@ Specifications
 
 ### Temperature Sensor with Delta-sigma Modulator (DSMANA_v1)
 Transient waveform  
-corner: tt, temperature: 25℃, power typ.  
+corner: tt, temperature: 25°C, power typ.  
 !["tt25deg"](https://github.com/0w5/tt_sky26a_analog_prj/blob/temp/img/dsm_tt.png)
 where bitout=DSM output, in=VPTAT, integ=DSM integrator output, v2=VAPWR, and v6=VDPWR.
 
-corner: ff, temperature: 100℃, power max.  
+corner: ff, temperature: 100°C, power max.  
 !["ff100deg"](https://github.com/0w5/tt_sky26a_analog_prj/blob/temp/img/dsm_ff_100C.png)
 where bitout=DSM output, in=VPTAT, integ=DSM integrator output, v2=VAPWR, and v6=VDPWR.
 
-corner: ss, temperature: -40℃, power min.  
+corner: ss, temperature: -40°C, power min.  
 !["ss-40deg"](https://github.com/0w5/tt_sky26a_analog_prj/blob/temp/img/dsmana_ss.png)
 where bitout=DSM output, in=VPTAT, integ=DSM integrator output, v2=VAPWR, and v6=VDPWR.
 
