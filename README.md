@@ -82,7 +82,7 @@ Specifications
 | VPTAT PSRR                   | 1.0 dB    | -         | -          | worst value from DC to 1 GHz       | 
 | IREF output current          | 15.3 μA   | 18.0 μA  | 20.7 μA   | changed from 30μA to 18μA in v2 | 
 
-Temperature dependency
+Temperature dependency  
 corner: tt, temperature: sweep℃, power typ.  
 ![""](https://github.com/0w5/tt_sky26a_analog_prj/blob/temp/img/bgr_temp_tt.png)
 
@@ -92,7 +92,7 @@ corner: ff, temperature: sweep℃, power max.
 corner: ss, temperature: sweep℃, power min.  
 ![""](https://github.com/0w5/tt_sky26a_analog_prj/blob/temp/img/bgr_temp_ss.png)
 
-Line regulation
+Line regulation  
 corner: tt, temperature: 25℃, power sweep.  
 ![""](https://github.com/0w5/tt_sky26a_analog_prj/blob/temp/img/bgr_dc_tt.png)
 
@@ -102,7 +102,7 @@ corner: ff, temperature: 140℃, power sweep.
 corner: ss, temperature: -40℃, power sweep.  
 ![""](https://github.com/0w5/tt_sky26a_analog_prj/blob/temp/img/bgr_dc_ss.png)
 
-PSRR
+PSRR  
 corner: tt, temperature: 25℃, power typ.  
 ![""](https://github.com/0w5/tt_sky26a_analog_prj/blob/temp/img/bgr_psrr_tt.png)
 
@@ -126,7 +126,7 @@ Specifications
 | Output voltage range | 0.4 ~ 1.8 V | 0.3 ~ 2.1 V | -       | Gain = +1                               | 
 | PSRR                 | 39 dB       | 40 dB       | -       | Gain = +1, worst value from DC to 1 GHz | 
 
-Bode plot
+Bode plot  
 corner: tt, temperature: 25℃, power typ.  
 ![""](https://github.com/0w5/tt_sky26a_analog_prj/blob/temp/img/op_bode_tt.png)
 
@@ -136,7 +136,7 @@ corner: ff, temperature: 140℃, power max.
 corner: ss, temperature: -40℃, power min.  
 ![""](https://github.com/0w5/tt_sky26a_analog_prj/blob/temp/img/op_bode_ss.png)
 
-  Output voltage range (gain = +1)
+Output voltage range (gain = +1)  
 corner: tt, temperature: 25℃, power typ.  
 ![""](https://github.com/0w5/tt_sky26a_analog_prj/blob/temp/img/op_range_tt.png)
 
@@ -146,7 +146,7 @@ corner: ff, temperature: 140℃, power max.
 corner: ss, temperature: -40℃, power min.  
 ![""](https://github.com/0w5/tt_sky26a_analog_prj/blob/temp/img/op_range_ss.png)
   
-PSRR
+PSRR  
 corner: tt, temperature: 25℃, power typ.  
 ![""](https://github.com/0w5/tt_sky26a_analog_prj/blob/temp/img/op_psrr_tt.png)
 
@@ -163,7 +163,7 @@ Specifications
 | Input IREF current | -       | 18 μA  | -       |                                                      | 
 | Output delay       | -       | 13 ns   | 18 ns   | 1-pF output load, 10 MHz / 1 Vpeak ramp wave input, | 
 
-Transient waveform
+Transient waveform  
 corner: tt, temperature: 25℃, power typ.  
 ![""](https://github.com/0w5/tt_sky26a_analog_prj/blob/temp/img/comp_tt.png)
 
@@ -181,7 +181,7 @@ Specifications
 | Output delay        | -       | 9 ns    | 10 ns   | 1-pF output load | 
 | Operating frequency | 10 MHz  | -       | -       | 1-pF output load | 
 
-Transient waveform
+Transient waveform  
 corner: tt, temperature: 25℃, power typ.  
 ![""](https://github.com/0w5/tt_sky26a_analog_prj/blob/temp/img/L2H_tt.png)
 
@@ -199,7 +199,7 @@ Specifications
 | Output delay        | -       | 7 ns    | 9 ns    | 5-pF output load | 
 | Operating frequency | 25 MHz  |         |         | 5-pF output load | 
 
-Transient waveform
+Transient waveform  
 corner: tt, temperature: 25℃, power typ.  
 ![""](https://github.com/0w5/tt_sky26a_analog_prj/blob/temp/img/H2L_tt.png)
 
@@ -219,7 +219,7 @@ Specifications
 
 Note that setup time and hold time are not characterized yet.
 
-Transient waveform
+Transient waveform  
 corner: tt, temperature: 25℃, power typ.  
 ![""](https://github.com/0w5/tt_sky26a_analog_prj/blob/temp/img/dff_tt.png)
 
@@ -236,6 +236,7 @@ Specifications
 | On Resistance | 1 kΩ   |         |         |      | 
 
 ### Temperature Sensor with Delta-sigma Modulator (DSMANA_v1)
+Transient waveform  
 corner: tt, temperature: 25℃, power typ.  
 !["tt25deg"](https://github.com/0w5/tt_sky26a_analog_prj/blob/temp/img/dsm_tt.png)
 where bitout=DSM output, in=VPTAT, integ=DSM integrator output, v2=VAPWR, and v6=VDPWR.
@@ -255,7 +256,7 @@ Function
  - When the period counter overflows, output data are latched and both counters are reset with 1-cycle latency. Thus, output data rate is calculated as clock frequency / (overflow bitlength + 1).
  - Overflow bitlength can be selected with BITSEL.
 
-Transient waveform (input clock frequency = period counting clock frequency)  
+Transient waveform (input clock frequency = period counting clock frequency)   
 ![""](https://github.com/0w5/tt_sky26a_analog_prj/blob/temp/img/cntdig_tt.png)
 where o*= output from the pulse counter, out* = latched data output
  
